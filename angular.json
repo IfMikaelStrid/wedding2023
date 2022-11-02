@@ -24,7 +24,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
+              "src/lav-icon.png",
               "src/assets"
             ],
             "styles": [
@@ -92,7 +92,7 @@
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
+              "src/lav-icon.png",
               "src/assets"
             ],
             "styles": [
@@ -100,8 +100,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "wedding:build:production",
+            "firebaseProject": "mickeochjossan",
+            "firebaseHostingSite": "mickeochjossan"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

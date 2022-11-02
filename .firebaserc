@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mickeochjossan": {
+      "hosting": {
+        "wedding": [
+          "mickeochjossan"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mickeochjossan"
+  }
+}
