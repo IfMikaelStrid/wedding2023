@@ -8,11 +8,12 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <style>
   .box {
+    margin-top: 5em;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    
   }
 
   .bowtie {
@@ -56,19 +57,13 @@
     <div>
       <img class="bowtie" src="../assets/images/bthr.png" width="50px">
     </div>
+    <div>
+      <app-osa-form></app-osa-form>
+    </div>
   </div>
 
   <div class="footer">
     <a href="mailto:info@mickeochjossan.se">Kontakt</a>
   </div>
 </div>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 <router-outlet></router-outlet>

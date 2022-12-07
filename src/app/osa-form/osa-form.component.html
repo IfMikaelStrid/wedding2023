@@ -1,0 +1,36 @@
+
+<img src="../../assets/images/laurel_upper.png" class="responsive"/>
+
+<div class="rsvp">
+    <h2>OSA</h2>
+    <div class="form-group">
+        <label for="name">Namn</label>
+        <textarea type="text"rows=2 style="resize:none" placeholder="Ditt/Era namn" class="form-control" id="name" required [(ngModel)] = "model.name"></textarea>
+    </div>
+    
+    <div class="form-group">
+        <label for="comming">Kan du komma?</label>
+        <select class="form-control" id="isAttending" required>
+            <option *ngFor="let comming of isAttending" [value]="comming">{{comming}}</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="matPrefAllergi">Har du/ni några matpreferenser eller allergier?</label>
+        <textarea type="text"rows=2 style="resize:none" class="form-control" id="matPrefAllergi" required [(ngModel)] = "model.matPrefAllergi"></textarea>
+    </div>
+    
+    <div class="form-group">
+        <label for="alkohol">Vill du/ni ha alkohol eller alkoholfritt?</label>
+        <textarea type="text"rows=2 style="resize:none" placeholder="Vem vill/vill inte ha alkohol" class="form-control" id="alkohol" required [(ngModel)] = "model.alcohol"></textarea>
+    </div>
+    
+    <div class="form-group">
+        <label for="song">Vilken sång dansar du helst till?</label>
+        <input type="text"  class="form-control" id="song"
+        [(ngModel)]="model.song" name="song">
+    </div>
+    <a class="btn btn-success btn-md" href="mailto:osa@mickeochjossan.se?subject=Micke och Jossan 2023 OSA: {{model.name}}&body=OSA: {{model.name}} {{model.attending}}%0D%0AMatpreferenser/Allergier: {{model.matPrefAllergi}}%0D%0AAlkohol: {{model.alcohol}}%0D%0AVi skakar rumpan till: {{model.song}}"><span class="glyphicon glyphicon-envelope"></span> Skicka</a>
+</div>
+
+<img src="../../assets/images/laurel_lower.png" class="responsive"/>
